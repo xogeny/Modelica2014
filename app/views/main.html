@@ -1,9 +1,19 @@
-<div class="hero-unit">
+<div class="text-center">
   <h1>10th International Modelica Conference</h1>
   <p>Conference Program App</p>
+  <p>Sponsored by Xogeny</p>
 </div>
-<div>
+<div class="text-center">
   <div ng-repeat="day in schedule.program">
     <h2>{{day.day}}</h2>
+    <div ng-repeat="slot in day.slots">
+      <h3>{{slot.slot}}</h3>
+      <div ng-repeat="session in slot.sessions">
+	<h4>{{session.name}}: Room {{session.room}}</h4>
+	<div ng-repeat="paper in session.papers">
+	  <h5>{{paper}}</h5>
+	</div>
+      </div>
+    </div>
   </div>
 </div>
