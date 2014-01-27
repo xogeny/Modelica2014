@@ -37,12 +37,13 @@ for line in lines:
         num = title_to_num.get(title, "")
         if num=="":
             print "Couldn't find number for: '%s'" % (title,)
-        paper = {"authors": authors, "title": title}
-        session["papers"].append(paper)
+        # paper = {"authors": authors, "title": title}
+        session["papers"].append(num)
+        # session["papers"].append(paper)
 
 data = {"program": program}
 
-# print str(subs_by_num)
+print str(subs_by_num)
 
 fp = open("data.json", "w")
 json.dump(data, fp, indent=2)
