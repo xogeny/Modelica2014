@@ -11,8 +11,11 @@ describe('Service: Schedule', function () {
     Schedule = _Schedule_;
   }));
 
-  it("should have program and paper elements", function () {
+  it("should have a program object", function () {
       expect("program" in Schedule);
+  });
+
+  it("should have a papers array", function () {
       expect("papers" in Schedule);
   });
 
