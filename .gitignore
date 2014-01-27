@@ -1,4 +1,8 @@
-data.json
-modelica2014.json
 easychair.xml
+modelica2014.json
 node_modules
+dist
+.tmp
+.sass-cache
+app/bower_components
+test/bower_components
