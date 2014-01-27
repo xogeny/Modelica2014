@@ -1,26 +1,26 @@
 * <2014-03-11 Tue 10:40-12:00>
 ** FMI 1
-*** Christian Bertsch, Elmar Ahle and Ulrich Schulmeister. The Functional Mockup Interface - seen from an industrial perspective
+*** Christian Bertsch, Elmar Ahle and Ulrich Schulmeister. The Functional Mockup Interface  - seen from an industrial perspective
 *** Maria Henningsson, Johan Åkesson and Hubertus Tummescheit. An FMI-Based Tool for Robust Design of Dynamical Systems
-*** Lev Greenberg, Yishai A. Feldman and Eldad Palachi. Simulating Rhapsody SysML Blocks in Hybrid Models with FMI
+*** Lev Greenberg, Yishai Feldman and Eldad Palachi. Simulating Rhapsody SysML Blocks in Hybrid Models with FMI
 *** Jonathan Brembeck, Andreas Pfeiffer, Michael Fleps-Dezasse, Martin Otter, Karl Wernersson and Hilding Elmqvist. Nonlinear State Estimation with an Extended FMI 2.0 Co-Simulation Interface
 ** Automotive Applications 1
 *** Yutaka Hirano, Shintaro Inoue and Junya Ota. Model-based Development of Future Small EVs using Modelica
-*** Hasan Flaih Awad, Frank Rettig and Tomas Smetana. Modeling of Electrical Axle Drive with Modelica: A Study of Electrical Active Dynamics
+*** Hasan Flaih Awad, Frank Rettig and Tomas Smetana. Modeling of an Electric Axle Drive with Modelica: A Study of Electric Active Dynamics
 *** Sebastian Hämmerle, Markus Andres and Thomas Schmitt. Utilizing Object-Oriented Modeling Techniques for Composition of Operational Strategies for Electrified Vehicles
 *** Alessandro Picarelli, Eduardo Galindo and Gonzalo Diaz. Thermal shock testing for Engines in Dymola
 ** Building energy applications 1
 *** Torsten Schwan, René Unger, Christian Lerche and Christian Kehrer. Model-Based Design of Integrative Energy Concepts for Building Quarters using Modelica
 *** Svea Kübler and Victor Norrefeldt. Enhancement of the building simulation software TRNSYS by coupling to the VEPZO model programmed in Modelica
-*** Arnav Pathak, Victor Norrefeldt, Abdellah Lemouedda and Gunnar Grün. The Modelica Thermal Model Generation Tool for Automated Creation of a Coupled Airflow, Radiation Solver and Wall Model in Modelica
+*** Arnav Pathak, Victor Norrefeldt, Abdellah Lemouedda and Gunnar Grün. The Modelica Thermal Model Generation Tool for Automated Creation of a Coupled Airflow, Radiation Model and Wall Model in Modelica
 *** Moritz Lauster, Peter Remmen, Marcus Fuchs, Jens Teichmann, Rita Streblow and Dirk Müller. Modelling long-wave radiation heat exchange for thermal network building simulations at urban scale using Modelica
 ** Electro-Magnetic Models and Libraries 1
 *** Christian Kral, Anton Haumer and Reinhard Wöhrnschimmel. Extension of the FundamentalWave Library towards Multi Phase Electric Machine Models
 *** Christian Kral and Anton Haumer. New Multi Phase Quasi Static Fundamental Wave Electric Machine Models for High Performance Simulations
 *** Anton Haumer and Christian Kral. The New EDrives Library: A Modular Tool for Engineering of Electric Drives
-*** Thomas Bödrich and Johannes Ziske. Modelica Models for Magnetic Hysteresis, Materials and Transformers
+*** Thomas Bödrich and Johannes Ziske. Modelica Models for Magnetic Hysteresis,  Materials and Transformers
 ** Modelica Language & Compiler Implementation
-*** Dirk Zimmer, Martin Otter, Hilding Elmqvist and Gerd Kurzbach. Custom Annotations: Handling Meta-Information in Modelica
+*** Dirk Zimmer, Martin Otter, Hilding Elmqvist and Gerd Kurzbach. Custom Annotations:  Handling Meta-Information in Modelica
 *** Hilding Elmqvist, Sven Erik Mattsson and Martin Otter. Modelica extensions for Multi-Mode DAE Systems
 *** Martin Sjölund, Francesco Casella, Adrian Pop, Adeel Asghar, Peter Fritzson, Willi Braun, Lennart Ochel and Bernhard Bachmann. Integrated Debugging of Equation-Based Models
 *** Matthew Klenk, Daniel Bobrow, Johan De Kleer and Bill Janssen. Making Modelica Applicable for Formal Methods
@@ -32,7 +32,7 @@
 *** Himanshu Neema, Jesse Gohl, Zsolt Lattmann, Janos Sztipanovits, Gabor Karsai, Sandeep Neema, Ted Bapty, John Batteh and Hubertus Tummescheit. Model-Based Integration Platform for FMI Co-Simulation and Heterogeneous Simulations of Cyber-Physical Systems
 *** Faruk Yilmaz, Umut Durak, Koray Taylan and Halit Oğüztüzün. Adapting Functional Mockup Units for HLA-compliant Distributed Simulation
 ** Automotive Applications 2
-*** Jochen Köhler, Michael Kuebler and Julian King. Transmission Modeling in Modelica: A Case Study from the Automotive Industry
+*** Jochen Köhler, Michael Kuebler and Julian King. Transmission Modeling in Modelica: A consistent approach for several software development platforms
 *** Peter Sundström, Bengt Jacobson and Leo Laine. Vectorized single-track model in Modelica for articulated vehicles with arbitrary number of units and axles
 *** Gianni Ferretti, Bruno Scaglioni and Andrea Rossi. Multibody Model of a Motorbike with a Flexible Swingarm
 *** Michael Fleps-Dezasse, Jakub Tobolar and Johannes Pitzer. Modelling and parameter identification of a semi-active vehicle damper
@@ -40,7 +40,7 @@
 *** Ana Constantin, Rita Streblow and Dirk Mueller. The Modelica HouseModels Library: Presentation and Evaluation of a Room Model with the ASHRAE Standard 140
 *** Juan Van Roy, Robbe Salenbien and Johan Driesen. Modelica Library for Building and Low-Voltage Electrical AC and DC Grid Modeling
 *** Thierry Stephane Nouidui and Michael Wetter. Tool coupling for the design and operation of building energy and control systems based on the Functional Mock-up Interface standard
-*** Gilles Plessis, Edouard Amouroux and Yvon Haradji. Coupling occupant behaviour with a building energy model - An FMI application
+*** Gilles Plessis, Edouard Amouroux and Yvon Haradji. Coupling occupant behaviour with a building energy model - A FMI application
 ** Electro-Magnetic Models and Libraries 2
 *** Kotub Uddin and Alessandro Picarelli. Phenomenological Li ion battery modelling in Dymola
 *** Johannes Gerl, Leonard Janczyk, Imke Krüger and Nils Modrow. A Modelica Based Lithium Ion Battery Model
@@ -49,7 +49,7 @@
 *** Peter Fritzson, Zsolt Lattmann, Adrian Pop, Johan de Kleer, Bill Janssen, Sandeep Neema, Ted Bapty, Xenofon Koutsoukos, Matthew Klenk, Daniel Bobrow, Bhaskar Saha and Tolga Kurtoglu. Verification and Design Exploration through Meta Tool Integration with OpenModelica
 *** Hilding Elmqvist, Sven Erik Mattsson and Hans Olsson. Parallel Model Execution on Many Cores
 *** Nils Menager, Niklas Worschech and Lars Mikelsons. A toolchain for Rapid Control Prototyping using Rexroth controllers and open source software
-*** Bernhard Thiele, Martin Otter and Sven Erik Mattsson. Modular Multi-rate and Multi-method Real-time Simulation
+*** Bernhard Thiele, Martin Otter and Sven Erik Mattsson. Modular Multi-Rate and Multi-Method Real-Time Simulation
 
 * <2014-03-11 Tue 15:10-16:30>
 ** Automotive Applications: FMI & HIL
@@ -69,13 +69,13 @@
 *** Marek Mateják, Tomáš Kulhánek and Jan Šilar. Physiolibrary - Modelica library for Physiology
 ** Electrical Power Systems
 *** Tao Yang, Serhiy Bozhko and Greg Asher. Modelling of Electrical Power Systems with Dynamic Phasors in Modelica
-*** Rüdiger Franke and Hansjürg Wiesmann. Flexible modeling of electrical power systems – the Modelica PowerSystems library
+*** Rüdiger Franke and Hansjürg Wiesmann. Flexible modeling of electrical power systems - the Modelica PowerSystems library
 *** Christopher Hill, Paolo Giangrande, Chris Gerada and Serhiy Bozhko. Implementation of a Multi-Level Power Electronic Inverter Library in Modelica
 *** Hakan Parildar and Alberto Leva. Mixed phasor and time domain modelling of AC networks with changeover management
 ** Modelica Tools 2
-*** Michael Tiller and Dietmar Winkler. impact– A Modelica Package Manager
+*** Michael Tiller and Dietmar Winkler. impact- A Modelica Package Manager
 *** Roland Samlaus, Mareike Strach, Claudio Hillmann and Peter Fritzson. MoUnit - A Framework for Automatic Modelica Model Testing
-*** Atiyah Elsheikh. Modeling parameter sensitivities via equation-based algorithmic differentiation techniques
+*** Atiyah Elsheikh. Modeling parameter sensitivities via equation-based algorithmic differentiation techniques: The ADMSL.Electrical.Analog Library
 *** Arunkumar Palanisamy, Adrian Pop, Martin Sjölund and Peter Fritzson. Modelica Based Parser Generator with Good Error Handling
 
 * <2014-03-12 Wed 09:15-10:30>
@@ -89,7 +89,7 @@
 *** Sureshkumar Chandrasekar and Hubertus Tummescheit. Physical Design of HydraulicValves in Modelica
 ** Control Applications
 *** Manuel Gräber. Exploiting Actuator Limits with Feedforward Control based on Inverse Models
-*** Marco Bonvini, Michael Wetter and Michael D. Sohn. An FMU-based Framework for State and Parameter Estimation
+*** Marco Bonvini, Michael Wetter and Michael Sohn. An FMI-based Framework for State and Parameter Estimation
 *** Roel De Coninck, Fredrik Magnusson, Johan Akesson and Lieve Helsen. Grey-box Building Models for Model Order Reduction and Control
 ** Thermofluid Systems Models and Libraries 1
 *** Kai Wellner, Carsten Trapp, Gerhard Schmitz and Francesco Casella. Interfacing Models for Thermal Separation Processes with Fluid Property Data from External Sources
@@ -97,27 +97,27 @@
 *** Sylvain Quoilin, Adriano Desideri, Jorrit Wronski, Ian Bell and Vincent Lemort. ThermoCycle: A Modelica library for the simulation of thermodynamic systems
 ** Hybrid Systems
 *** Simon Bliudze and Sébastien Furic. An Operational Semantics for Hybrid Systems involving Behavioral Abstraction
-*** Alexandra Mehlhase, Daniel Gomez Esperon, Julien Bergmann and Marcel Merkle. An example of beneficial use of variable-structure modeling to enhance an existing rocket model
+*** Alexandra Mehlhase, Daniel Gomez Esperon, Julien Bergmann and Marcel Merkle. An example of beneficial use of  variable-structure modeling to enhance an existing rocket model
 *** Marc Bouissou, Hilding Elmqvist, Martin Otter and Albert Benveniste. Efficient Monte Carlo simulation of stochastic hybrid systems
 
 * <2014-03-12 Wed 11:00-12:20>
 ** Aerospace Applications 2
 *** Andreas Klöckner. The Modelica BehaviorTrees Library: Mission Planning in Continuous-Time for Unmanned Aircraft
 *** Paolo Giangrande, Chris Hill, Chris Gerada and Serhiy Bozhko. Multi-Level Library of Electrical Machines for Aerospace Applications
-*** Martin R. Kuhn and Yang Ji. Modelica for large scale aircraft electrical network V&V
-*** Franciscus van der Linden, Clemens Schlegel, Markus Christmann, Gergely Regula, Chris I. Hill, Paolo Giangrande, Jean-Charles Maré and Imanol Egaña. Implementation of a Modelica Library for Simulation of Electromechanical Actuators for Aircraft and Helicopters
+*** Martin Kuhn and Yang Ji. Modelica for large scale aircraft electrical network V&V
+*** Franciscus van der Linden, Clemens Schlegel, Markus Christmann, Gergely Regula, Chris Hill, Paolo Giangrande, Jean-Charles Maré and Imanol Egaña. Implementation of a Modelica Library for Simulation of Electromechanical Actuators for Aircraft and Helicopters
 ** Power, Energy & Process Applications 1
 *** Wenbo Du, Humberto Garcia and Christiaan Paredis. An Optimization Framework for Dynamic Hybrid Energy Systems
 *** Karin Dietl, Stephanie Gallardo Yances, Anna Johnsson, Johan Akesson, Kilian Link and Stéphane Velut. Industrial application of optimization with Modelica and Optimica using intelligent Python scripting
-*** Xenofon Floros, Federico Bergero, Nicola Ceriani, Francesco Casella, Ernesto Kofman and Francois E. Cellier. Simulation of Smart-Grid Models using Quantization-Based Integration Methods
+*** Xenofon Floros, Federico Bergero, Nicola Ceriani, Francesco Casella, Ernesto Kofman and Francois Cellier. Simulation of Smart-Grid Models using Quantization-Based Integration Methods
 *** Joris Costes, Jean-Michel Ghidaglia, Philippe Muguerra, Keld Lund Nielsen, Xavier Riou, Jean-Philippe Saut and Nicolas Vayatis. On the Simulation of Offshore Oil Facilities at the System Level.
 ** Numerical Aspects of Modelica Tools
 *** Niklas Andersson, Johan Åkesson, Kilian Link, Stephanie Gallardo Yances, Karin Dietl and Bernt Nilsson. Parameter Selection in a Combined Cycle Power Plant
 *** Fatemeh Mohammadi, Carmen Arévalo and Claus Führer. Restarting algorithms for simulation problems with discontinuities
 *** Emil Fredriksson, Claus Führer, Christian Andersson and Johan Åkesson. Discontinuities handled with events in Assimulo
-*** Andreas Klöckner, Franciscus L. J. van der Linden and Dirk Zimmer. Noise Generation for Continuous System Simulation
+*** Andreas Klöckner, Franciscus van der Linden and Dirk Zimmer. Noise Generation for Continuous System Simulation
 ** Thermofluid Systems Models and Libraries 2
-*** Daniel Bouskela and Baligh El Hefni. A physical solution for solving the zero-flow singularity in static thermalhydraulics mixing models
+*** Daniel Bouskela and Baligh El Hefni. A physical solution for solving the zero-flow singularity in static thermal-hydraulics mixing models
 *** Damien Picard and Lieve Helsen. Advanced Hybrid Model for Borefield Heat Exchanger Performance Evaluation, an Implementation in Modelica
 *** Andreas Varchmin, Manuel Gräber, Wilhelm Tegethoff and Jürgen Köhler. Superheat Control with a Dynamic Inverse Model
 *** Uwe Bau, Franz Lanzerath, Manuel Gräber, Stefan Graf, Heike Schreiber, Niklas Thielen and André Bardow. Adsorption energy systems library - Modeling adsorption based chillers, heat pumps, thermal storages and desiccant systems
@@ -165,10 +165,10 @@
 *** Gilles Plessis, Aurelie Kaemmerlen and Amy Lindsay. BuildSysPro: a Modelica library for modelling buildings and energy systems
 *** Lena Scholz and Andreas Steinbrecher. Efficient Numerical Integration of Dynamical Systems based on Structural-Algebraic Regularization avoiding State Selection
 *** Lennart Ochel, Bernhard Bachmann and Francesco Casella. Symbolic Initialization of Overdetermined Higher-index Models
-*** Susana López Pérez and Itzal Del Hoyo Arce. Proposal for standardization of Heat Transfer Modelling in NewThermal Library
+*** Susana López Pérez and Itzal Del Hoyo Arce. Proposal for standardization of Heat Transfer Modelling  in NewThermal Library
 *** Luigi Vanfretti, Tetiana Bogodorova and Maxime Baudette. A Modelica Power System Component Library for Model Validation and Parameter Identification
 *** Rhama Dwiputra, Alexey Zakharov, Roustiam Chakirov and Erwin Prassler. Modelica Model for the youBot Manipulator
-*** Marcus Walther, Volker Waurich, Christian Schubert and Ines Gubsch. Parallelization of Modelica models
+*** Marcus Walther, Volker Waurich, Christian Schubert and Ines Gubsch. Equation based parallelization of Modelica models
 *** Thomas Baeuml and Helmut Kühnelt. Simulation of 2-dimensional flows in Modelica with the Casacaded Digital Lattice Boltzmann Method
 *** Thuy Nguyen. FORM-L: A MODELICA Extension for Properties Modelling Illustrated on a Practical Example
 *** Sébastien Furic, Loïc Wagner and Vincent Berthoux. Statecharts as a Means to Control Plant Models in LMS Imagine.Lab AMESim
@@ -178,4 +178,4 @@
 *** Roozbeh Sangi, Pooyan Jahangiri, Freerk Klasing, Rita Streblow and Dirk Müller. A Medium Model for the Refrigerant Propane for Fast and Accurate Dynamic Simulations
 *** Edo Drenth, Mikael Törmänen, Krister Johansson, Bengt-Arne Andersson, Daniel Andersson, Ivar Torstensson and Johan Åkesson. Consistent Simulation Environment with FMI based Tool Chain
 *** Mohammad Jahanzeb, Arunkumar Palanisamy, Martin Sjölund and Peter Fritzson. A MATLAB to Modelica Translator
-*** Mats Vande Cavey. Setting up a framework for model predictive control with moving horizon state estimation using
+*** Mats Vande Cavey. Setting up a framework for model predictive control with moving horizon state estimation using JModelica
