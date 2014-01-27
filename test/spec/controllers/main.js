@@ -3,7 +3,7 @@
 describe('Controller: MainCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('appmod2014App'));
+  beforeEach(module('AppMod2014App'));
 
   var MainCtrl,
     scope;

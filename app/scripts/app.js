@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('appmod2014App', [
+angular.module('AppMod2014App', [
   'ngCookies',
   'ngResource',
   'ngSanitize'
