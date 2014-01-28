@@ -1,30 +1,46 @@
 <div class="row">
   <div class="col-lg-12 text-center">
-    <h1>10th International Modelica Conference</h1>
+    <h2>10th International Modelica Conference</h2>
   </div>
   <div class="col-lg-12 text-center">
-    <h3>Conference Program App: Sponsored by Xogeny</h3>
+    <h5 class="pull-left">Conference Program App</h5>
+    <h5 class="pull-right">Sponsored by Xogeny</h5>
   </div>
 </div>
 <div class="row">
   <div class="col-xs-12">
-    <div class="panel panel-default">
+    <div class="panel panel-default" ng-repeat="day in schedule.program">
       <div class="panel-heading">
-	<h3 class="panel-title">Panel title</h3>
+	<h4 class="panel-title">{{day.day}}</h4>
       </div>
       <div class="panel-body">
-	Panel content
+	<div class="row">
+	  <div class="col-xs-2">
+	    <h5>Time</h5>
+	  </div>
+	  <div class="col-xs-8">
+	    <h5>Description</h5>
+	  </div>
+	  <div class="col-xs-2">
+	    <h5>Room</h5>
+	  </div>
+	</div>
+	<div class="row" ng-repeat="slot in day.slots">
+	  <div class="col-xs-2">
+	    {{slot.time}}
+	  </div>
+	  <div class="col-xs-8">
+	    <div ng-repeat="session in slot.sessions">
+	      {{session.name}}
+	    </div>
+	  </div>
+	  <div class="col-xs-2">
+	    <div ng-repeat="session in slot.sessions">
+	      {{session.room}}
+	    </div>
+	  </div>
+	</div>
       </div>
     </div>
-    <ul class="list-group" ng-repeat="day in schedule.program">
-      <li class="list-group-item-active">{{day.day}}
-<!--	<div ng-repeat="slot in day.slots">
-	  <div class="list-group-item">{{slot.time}}</div>
-	  <div ng-repeat="session in slot.sessions">
-	    <h4>{{session.name}}: Room {{session.room}}</h4>
-	  </div>
-	</div> -->
-      </li>
-    </ul>
   </div>
 </div>
