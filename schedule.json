@@ -3,71 +3,78 @@
 				{
 						"day": "Sunday",
 						"slots": []
-				}, {
+				},
+				{
 						"day": "Monday",
+						"slots": []
+				},
+				{
+						"day": "Tuesday",
 						"slots": [
 								{
-										"id": "M1",
+										"id": "T1",
+										"time": "10:40-12:00",
 										"slot": "<2014-03-11 Tue 10:40-12:00>", 
 										"sessions": [
 												{
-														"id": "M1-A",
+														"id": "T1-A",
 														"papers": ["15", "66", "128", "91"],
 														"name": "FMI 1", "room": "TBD"
 												}, 
 												{
-														"id": "M1-B",
+														"id": "T1-B",
 														"papers": ["9", "40", "42", "107"],
 														"name": "Automotive Applications 1", "room": "TBD"
 												}, 
 												{
-														"id": "M1-C",
+														"id": "T1-C",
 														"papers": ["19", "39", "137", "67"],
 														"name": "Building energy applications 1",
 														"room": "TBD"
 												}, 
 												{
-														"id": "M1-D",
+														"id": "T1-D",
 														"papers": ["3", "4", "22", "92"],
 														"name": "Electro-Magnetic Models and Libraries 1",
 														"room": "TBD"
 												}, 
 												{
-														"id": "M1-E",
+														"id": "T1-E",
 														"papers": ["61", "103", "136", "161"],
 														"name": "Modelica Language & Compiler Implementation",
 														"room": "TBD"
 												}
 										]
 								},{
-										"id": "M2",
+										"id": "T2",
+										"time": "13:20-14:40",
 										"slot": "<2014-03-11 Tue 13:20-14:40>", 
 										"sessions": [
 												{
-														"id": "M2-A",
+														"id": "T2-A",
 														"papers": ["104", "68", "110", "130"],
 														"name": "FMI 2", "room":
 														"TBD"
 												}, 
 												{
-														"id": "M2-B",
+														"id": "T2-B",
 														"papers": ["73", "75", "78", "88"],
 														"name": "Automotive Applications 2",
 														"room": "TBD"
 												}, 
 												{
-														"id": "M2-C",
+														"id": "T2-C",
 														"papers": ["160", "69", "84", "59"],
 														"name": "Building energy applications 2",
 														"room": "TBD"
 												}, 
 												{
-														"id": "M2-D",
+														"id": "T2-D",
 														"papers": ["32", "119", "129"],
 														"name": "Electro-Magnetic Models and Libraries 2",
 														"room": "TBD"}, 
 												{
-														"id": "M2-E",
+														"id": "T2-E",
 														"papers": ["165", "156", "64", "138"],
 														"name": "Modelica Tools 1",
 														"room": "TBD"
@@ -75,71 +82,36 @@
 										]
 								}, 
 								{
-										"id": "M3",
-										"slot": "<2014-03-11 Tue 14:00-15:20>", 
-										"sessions": [
-												{
-														"id": "M3-A",
-														"papers": ["26", "28", "115", "118"], 
-														"name": "Mechanical Systems", 
-														"room": "TBD"
-												}, 
-												{
-														"id": "M3-B",
-														"papers": ["126", "166", "173", "174"], 
-														"name": "Power, Energy & Process Applications 2", 
-														"room": "TBD"
-												}, 
-												{
-														"id": "M3-C",
-														"papers": ["6", "29", "95", "99"], 
-														"name": "Optimization Applications and Methods", 
-														"room": "TBD"
-												}, 
-												{
-														"id": "M3-D",
-														"papers": ["121", "57", "74", "101"], 
-														"name": "Thermal Power Processes", 
-														"room": "TBD"
-												}, 
-												{
-														"id": "M3-E",
-														"papers": ["168", "30", "170", "77"], 
-														"name": "Web-related Modelica Tools", 
-														"room": "TBD"
-												}
-										]
-								},
-								{
-										"id": "M4",
+										"id": "T3",
+										"time": "15:10-16:30",
 										"slot": "<2014-03-11 Tue 15:10-16:30>", 
 										"sessions": [
 												{
-														"id": "M4-A",
+														"id": "T3-A",
 														"papers": ["56", "159", "175", "167"], 
 														"name": "Automotive Applications: FMI & HIL", 
 														"room": "TBD"
 												}, 
 												{
-														"id": "M4-B",
+														"id": "T3-B",
 														"papers": ["48", "100", "38", "11"], 
 														"name": "Fault Handling and Safety Issues in Modelica", 
 														"room": "TBD"
 												}, 
 												{
-														"id": "M4-C",
+														"id": "T3-C",
 														"papers": ["12", "122", "154", "157"], 
 														"name": "Novel Modelica Applications and Libraries", 
 														"room": "TBD"
 												}, 
 												{
-														"id": "M4-D",
+														"id": "T3-D",
 														"papers": ["13", "17", "35", "98"], 
 														"name": "Electrical Power Systems", 
 														"room": "TBD"
 												}, 
 												{
-														"id": "M4-E",
+														"id": "T3-E",
 														"papers": ["171", "93", "146", "155"], 
 														"name": "Modelica Tools 2", 
 														"room": "TBD"
@@ -148,38 +120,39 @@
 								}
 						]
 				}, {
-						"day": "Tuesday",
+						"day": "Wednesday",
 						"slots": [
 								{
-										"id": "T1",
+										"id": "W1",
+										"time": "9:15-10:30",
 										"slot": "<2014-03-12 Wed 09:15-10:30>", 
 										"sessions": [
 												{
-														"id": "T1-A",
+														"id": "W1-A",
 														"papers": ["76", "82", "142"], 
 														"name": "Aerospace Applications 1", 
 														"room": "TBD"
 												}, 
 												{
-														"id": "T1-B",
+														"id": "W1-B",
 														"papers": ["16", "65", "140"], 
 														"name": "Industrial Equipment", 
 														"room": "TBD"
 												}, 
 												{
-														"id": "T1-C",
+														"id": "W1-C",
 														"papers": ["21", "86", "143"], 
 														"name": "Control Applications", 
 														"room": "TBD"
 												}, 
 												{
-														"id": "T1-D",
+														"id": "W1-D",
 														"papers": ["117", "123", "172"], 
 														"name": "Thermofluid Systems Models and Libraries 1", 
 														"room": "TBD"
 												}, 
 												{
-														"id": "T1-E",
+														"id": "W1-E",
 														"papers": ["55", "97", "131"], 
 														"name": "Hybrid Systems", 
 														"room": "TBD"
@@ -187,37 +160,75 @@
 										]
 								}, 
 								{
-										"id": "T2",
+										"id": "W2",
+										"time": "11:00-12:20",
 										"slot": "<2014-03-12 Wed 11:00-12:20>", 
 										"sessions": [
 												{
-														"id": "T2-A",
+														"id": "W2-A",
 														"papers": ["8", "10", "45", "62"], 
 														"name": "Aerospace Applications 2", 
 														"room": "TBD"
 												}, 
 												{
-														"id": "T2-B",
+														"id": "W2-B",
 														"papers": ["87", "52", "79", "54"], 
 														"name": "Power, Energy & Process Applications 1", 
 														"room": "TBD"
 												}, 
 												{
-														"id": "T2-C",
+														"id": "W2-C",
 														"papers": ["158", "147", "80", "47"], 
 														"name": "Numerical Aspects of Modelica Tools", 
 														"room": "TBD"
 												}, 
 												{
-														"id": "T2-D",
+														"id": "W2-D",
 														"papers": ["2", "23", "102", "116"], 
 														"name": "Thermofluid Systems Models and Libraries 2", 
 														"room": "TBD"
 												}, 
 												{
-														"id": "T2-E",
+														"id": "W2-E",
 														"papers": ["125", "153", "44", "43"], 
 														"name": "Modelica Tools 3", 
+														"room": "TBD"
+												}
+										]
+								},
+ 								{
+										"id": "W3",
+										"time": "14:00-15:20",
+										"slot": "<2014-03-11 Tue 14:00-15:20>", 
+										"sessions": [
+												{
+														"id": "W3-A",
+														"papers": ["26", "28", "115", "118"], 
+														"name": "Mechanical Systems", 
+														"room": "TBD"
+												}, 
+												{
+														"id": "W3-B",
+														"papers": ["126", "166", "173", "174"], 
+														"name": "Power, Energy & Process Applications 2", 
+														"room": "TBD"
+												}, 
+												{
+														"id": "W3-C",
+														"papers": ["6", "29", "95", "99"], 
+														"name": "Optimization Applications and Methods", 
+														"room": "TBD"
+												}, 
+												{
+														"id": "W3-D",
+														"papers": ["121", "57", "74", "101"], 
+														"name": "Thermal Power Processes", 
+														"room": "TBD"
+												}, 
+												{
+														"id": "W3-E",
+														"papers": ["168", "30", "170", "77"], 
+														"name": "Web-related Modelica Tools", 
 														"room": "TBD"
 												}
 										]
