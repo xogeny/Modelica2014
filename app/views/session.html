@@ -15,6 +15,16 @@
 	<h4 class="panel-title text-center">{{session.name}}</h4>
       </div>
       <div class="panel-body">
+	<div class="pull-right">
+	  <button class="btn btn-success"
+		  ng-show="slot+'-'+userdata['choices'][slot]==id">
+	    <span class="glyphicon glyphicon-check"></span>&nbsp;Selected
+	  </button>
+	  <button ng-hide="slot+'-'+userdata['choices'][slot]==id"
+		  class="btn btn-primary" ng-click="userdata['choices'][slot]=id[3]">
+	    Select
+	  </button>
+	</div>
 	<p class="lead">Room: {{session.room}}</p>
 
 	<div class="panel-group" id="accordion">

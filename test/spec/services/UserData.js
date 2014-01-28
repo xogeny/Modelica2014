@@ -12,7 +12,7 @@ describe('Service: Userdata', function () {
   }));
 
   it('should do something', function () {
-    expect(!!Userdata).toBe(true);
+    expect("choices" in Userdata);
   });
 
 });

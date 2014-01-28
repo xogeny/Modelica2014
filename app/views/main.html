@@ -31,9 +31,17 @@
 	  </div>
 	  <div class="col-xs-8">
 	    <div ng-repeat="session in slot.sessions">
-	      <a href="#/session/{{session}}">
-		{{schedule["sessions"][session].name}}
-	      </a>
+	      <div>
+		<span>
+		  <input type="radio" name="{{slot.id}}"
+			 ng-value="session[3]" ng-model="userdata['choices'][slot.id]">
+		</span>
+		<span>
+		  <a href="#/session/{{session}}">
+		    {{schedule["sessions"][session].name}}
+		  </a>
+		</span>
+	      </div>
 	    </div>
 	  </div>
 	  <div class="col-xs-2">
