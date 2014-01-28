@@ -1,16 +1,30 @@
-<div class="text-center">
-  <h1>10th International Modelica Conference</h1>
-  <p>Conference Program App</p>
-  <p>Sponsored by Xogeny</p>
+<div class="row">
+  <div class="col-lg-12 text-center">
+    <h1>10th International Modelica Conference</h1>
+  </div>
+  <div class="col-lg-12 text-center">
+    <h3>Conference Program App: Sponsored by Xogeny</h3>
+  </div>
 </div>
-<div class="text-center">
-  <div ng-repeat="day in schedule.program">
-    <h2>{{day.day}}</h2>
-    <div ng-repeat="slot in day.slots">
-      <h3>{{slot.time}}</h3>
-      <div ng-repeat="session in slot.sessions">
-	<h4>{{session.name}}: Room {{session.room}}</h4>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+	<h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+	Panel content
       </div>
     </div>
+    <ul class="list-group" ng-repeat="day in schedule.program">
+      <li class="list-group-item-active">{{day.day}}
+<!--	<div ng-repeat="slot in day.slots">
+	  <div class="list-group-item">{{slot.time}}</div>
+	  <div ng-repeat="session in slot.sessions">
+	    <h4>{{session.name}}: Room {{session.room}}</h4>
+	  </div>
+	</div> -->
+      </li>
+    </ul>
   </div>
 </div>
