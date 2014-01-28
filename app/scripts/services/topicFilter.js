@@ -22,8 +22,6 @@ angular.module('AppMod2014App')
 	  return false;
       }
       var checkSlot = function(slot, current) {
-	  console.log("slot = ");
-	  console.log(slot);
 	  if (current==="") return true;
 	  for(var i=0;i<slot.sessions.length;i++) {
 	      if (checkSession(slot.sessions[i], current)) return true;
@@ -31,16 +29,9 @@ angular.module('AppMod2014App')
 	  return false;
       }
       var checkDay = function(day, current) {
-	  console.log("day = ");
-	  console.log(day);
 	  if (current==="") return true;
 	  for(var i=0;i<day.slots.length;i++) {
-	      if (checkSlot(day.slots[i], current)) {
-		  console.log("Slot "+day.slots[i].id+" has something");
-		  return true;
-	      } else {
-		  console.log("Slot "+day.slots[i].id+" has nothing");
-	      }
+	      if (checkSlot(day.slots[i], current)) return true;
 	  }
 	  return false;
       }
