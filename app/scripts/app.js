@@ -11,6 +11,10 @@ angular.module('AppMod2014App', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/session/:id', {
+	templateUrl: 'views/session.html',
+	controller: 'SessionCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
