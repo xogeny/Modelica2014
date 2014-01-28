@@ -24,3 +24,16 @@ schedule["papers"] = subs_by_num
 
 with open("modelica2014.json", "w") as fp:
     json.dump(schedule, fp, indent=2)
+
+with open("app/scripts/services/Schedule.js", "w") as fp:
+    sched = json.dumps(schedule)
+    fp.write("""
+'use strict';
+
+angular.module('AppMod2014App')
+    .service('Schedule', function Schedule() {
+
+	return %s;
+    });
+    """ % (sched,));
+
