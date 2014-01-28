@@ -9,6 +9,31 @@
       </div>
       <div class="panel-body">
 	<p class="lead">Room: {{session.room}}</p>
+
+	<div class="panel-group" id="accordion">
+	  <div ng-repeat="pnum in session.papers" class="panel panel-default">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+		<a data-toggle="collapse" data-parent="#accordion" href="#paper-{{pnum}}">
+		  {{papers[pnum].title}}
+		</a>
+	      </h4>
+	    </div>
+	    <div id="paper-{{pnum}}" class="panel-collapse collapse out">
+	      <div class="panel-body">
+		<table class="table table-condensed">
+		  <thead>
+		    <tr><th>Authors</th></tr>
+		  </thead>
+		  <tbody>
+		    <tr ng-repeat="author in papers[pnum].authors"><td>{{author}}</td></tr>
+		  </tbody>
+		</table>
+		{{papers[pnum].abstract}}
+	      </div>
+	    </div>
+	  </div>
+	</div>
       </div>
     </div>
   </div>
