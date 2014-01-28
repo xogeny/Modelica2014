@@ -28,7 +28,8 @@
 	<p class="lead">Room: {{session.room}}</p>
 
 	<div class="panel-group" id="accordion">
-	  <div ng-repeat="pnum in session.papers" class="panel panel-default">
+	  <div ng-repeat="pnum in session.papers | filter:showPaper"
+	       class="panel panel-default">
 	    <div class="panel-heading">
 	      <h4 class="panel-title">
 		<a data-toggle="collapse" data-parent="#accordion" href="#paper-{{pnum}}">
@@ -55,3 +56,8 @@
     </div>
   </div>
 </div>
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+  <div class="form-group search-box">
+    <input type="text" class="form-control" placeholder="Search Term" ng-model="searchTerm">
+  </div>
+</nav>

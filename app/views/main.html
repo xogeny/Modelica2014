@@ -36,7 +36,7 @@
 		{{slot.time}}
 	      </div>
 	      <div class="col-xs-8">
-		<div ng-repeat="session in slot.sessions">
+		<div ng-repeat="session in slot.sessions | filter:showSession">
 		  <div>
 		    <span>
 		      <input type="radio" name="{{slot.id}}"
@@ -51,7 +51,7 @@
 		</div>
 	      </div>
 	      <div class="col-xs-2">
-		<div ng-repeat="session in slot.sessions">
+		<div ng-repeat="session in slot.sessions | filter:showSession">
 		  {{schedule["sessions"][session].room}}
 		</div>
 	      </div>
@@ -67,7 +67,6 @@
 </div>
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
   <div class="form-group search-box">
-    <input type="text" class="form-control" placeholder="Search Term">
+    <input type="text" class="form-control" placeholder="Search Term" ng-model="searchTerm">
   </div>
 </nav>
-
