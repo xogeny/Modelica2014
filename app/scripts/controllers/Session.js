@@ -12,6 +12,6 @@ angular.module('AppMod2014App')
 	  topicFilter.current = nv;
       });
       $scope.showPaper = function(pnum) {
-	  return topicFilter["checkPaper"](pnum, topicFilter.current);
+	  return topicFilter["checkPaper"](pnum, topicFilter.current.toLowerCase());
       }
   });

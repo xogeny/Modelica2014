@@ -5,7 +5,7 @@ angular.module('AppMod2014App')
       var checkSession = function(session, current) {
 	  var details = Schedule["sessions"][session];
 	  if (current==="") return true;
-	  if (details["name"].contains(current)) return true;
+	  if (details["name"].toLowerCase().contains(current)) return true;
 	  for(var i=0;i<details["papers"].length;i++) {
 	      if (checkPaper(details["papers"][i], current)) return true;
 	  }
@@ -14,15 +14,40 @@ angular.module('AppMod2014App')
       var checkPaper = function(paper, current) {
 	  var details = Schedule["papers"][paper];
 	  if (current==="") return true;
-	  if (details["title"].contains(current)) return true;
-	  if (details["abstract"].contains(current)) return true;
+	  if (details["title"].toLowerCase().contains(current)) return true;
+	  if (details["abstract"].toLowerCase().contains(current)) return true;
 	  for(var i=0;i<details["authors"].length;i++) {
-	      if (details["authors"][i].contains(current)) return true;
+	      if (details["authors"][i].toLowerCase().contains(current)) return true;
+	  }
+	  return false;
+      }
+      var checkSlot = function(slot, current) {
+	  console.log("slot = ");
+	  console.log(slot);
+	  if (current==="") return true;
+	  for(var i=0;i<slot.sessions.length;i++) {
+	      if (checkSession(slot.sessions[i], current)) return true;
+	  }
+	  return false;
+      }
+      var checkDay = function(day, current) {
+	  console.log("day = ");
+	  console.log(day);
+	  if (current==="") return true;
+	  for(var i=0;i<day.slots.length;i++) {
+	      if (checkSlot(day.slots[i], current)) {
+		  console.log("Slot "+day.slots[i].id+" has something");
+		  return true;
+	      } else {
+		  console.log("Slot "+day.slots[i].id+" has nothing");
+	      }
 	  }
 	  return false;
       }
       return {
 	  "current": "",
+	  "checkDay": checkDay,
+	  "checkSlot": checkSlot,
 	  "checkSession": checkSession,
 	  "checkPaper": checkPaper
       };
