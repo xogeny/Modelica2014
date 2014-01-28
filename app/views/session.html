@@ -1,3 +1,12 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="form-group search-box">
+    <a class="btn pull-left" href="#">
+      <span class="glyphicon glyphicon-th-list"></span>
+      &nbsp;Return to conference program
+    </a>
+  </div>
+</nav>
+<!--
 <div class="row">
   <div class="col-xs-12">
     <p>
@@ -8,7 +17,8 @@
     </p>
   </div>
 </div>
-<div class="row">
+-->
+<div id="session" class="row">
   <div class="col-lg-12">
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -20,11 +30,19 @@
 		  ng-show="slot+'-'+userdata['choices'][slot]==id">
 	    <span class="glyphicon glyphicon-check"></span>&nbsp;Selected
 	  </button>
-	  <button ng-hide="slot+'-'+userdata['choices'][slot]==id"
+	  <button ng-hide="userdata['choices'][slot]==null || slot+'-'+userdata['choices'][slot]==id"
+		  class="btn btn-warning" ng-click="userdata['choices'][slot]=id[3]"
+		  id="switch"
+		  data-toggle="tooltip"
+		  data-title="Dummy">
+	    Switch
+	  </button>
+	  <button ng-show="userdata['choices'][slot]==null"
 		  class="btn btn-primary" ng-click="userdata['choices'][slot]=id[3]">
 	    Select
 	  </button>
 	</div>
+	<p class="lead">Time: {{slot.time}}</p>
 	<p class="lead">Room: {{session.room}}</p>
 
 	<div class="panel-group" id="accordion">

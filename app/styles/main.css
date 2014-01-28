@@ -31,3 +31,12 @@ body {
 #main {
     padding-bottom: 60px;
 }
+
+#session {
+    padding-top: 60px;
+}
+
+.tag {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
