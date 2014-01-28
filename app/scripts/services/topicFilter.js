@@ -4,20 +4,23 @@ angular.module('AppMod2014App')
   .service('topicFilter', function topicFilter(Schedule) {
       var checkSession = function(session, current) {
 	  var details = Schedule["sessions"][session];
+	  var name = details["name"];
+	  var lcname = name.toLowerCase();
+	  var papers = details["papers"];
 	  if (current==="") return true;
-	  if (details["name"].toLowerCase().contains(current)) return true;
-	  for(var i=0;i<details["papers"].length;i++) {
-	      if (checkPaper(details["papers"][i], current)) return true;
+	  if (lcname.indexOf(current)>=0) return true;
+	  for(var i=0;i<papers.length;i++) {
+	      if (checkPaper(papers[i], current)) return true;
 	  }
 	  return false;
       }
       var checkPaper = function(paper, current) {
 	  var details = Schedule["papers"][paper];
 	  if (current==="") return true;
-	  if (details["title"].toLowerCase().contains(current)) return true;
-	  if (details["abstract"].toLowerCase().contains(current)) return true;
+	  if (details["title"].toLowerCase().indexOf(current)>=0) return true;
+	  if (details["abstract"].toLowerCase().indexOf(current)>=0) return true;
 	  for(var i=0;i<details["authors"].length;i++) {
-	      if (details["authors"][i].toLowerCase().contains(current)) return true;
+	      if (details["authors"][i].toLowerCase().indexOf(current)>=0) return true;
 	  }
 	  return false;
       }
