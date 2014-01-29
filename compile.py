@@ -20,7 +20,14 @@ for sub in submissions:
 with open("schedule.json", "r") as fp:
     schedule = json.load(fp)
 
-schedule["papers"] = subs_by_num
+with open("events.json", "r") as fp:
+    events = json.load(fp)
+
+papers = {}
+papers.update(subs_by_num)
+papers.update(events)
+
+schedule["papers"] = papers
 
 with open("modelica2014.json", "w") as fp:
     json.dump(schedule, fp, indent=2)
