@@ -65,6 +65,10 @@
 		    <tr ng-repeat="author in papers[pnum].authors"><td>{{author}}</td></tr>
 		  </tbody>
 		</table>
+		<dl>
+		  <dt>Keywords</dt>
+		  <dd>{{papers[pnum].keywords.join(', ')}}</dd>
+		</dl>
 		{{papers[pnum].abstract}}
 	      </div>
 	    </div>
