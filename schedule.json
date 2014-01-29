@@ -7,6 +7,7 @@
 	"Tu-5": {"papers": [], "name": "Tutorial 5", "room": "MA5"},
 	"Tu-6": {"papers": [], "name": "Tutorial 6", "room": "MA6"},
 	"Re-1": {"papers": [], "name": "Welcome Reception", "room": "TBD"},
+	"Op-A": {"papers": [], "name": "Conference Opening and First Keynote", "room": "TBD"},
 	"T1-A": {"papers": ["15", "66", "128", "91"], "name": "FMI 1", "room": "MA1"},
 	"T1-B": {"papers": ["9", "40", "42", "107"],
 		 "name": "Automotive Applications 1", "room": "MA2"},
@@ -19,6 +20,9 @@
 	"T1-E": {"papers": ["61", "103", "136", "161"],
 		 "name": "Modelica Language & Compiler Implementation",
 		 "room": "MA5"},
+	"T1-X": {"papers": [],
+		 "name": "Exhibition Session",
+		 "room": "Exh"},
 	"T2-A": {"papers": ["104", "68", "110", "130"],
 		 "name": "FMI 2", "room": "MA1"},
 	"T2-B": {"papers": ["73", "75", "78", "88"],
@@ -33,6 +37,9 @@
 	"T2-E": {"papers": ["165", "156", "64", "138"],
 		 "name": "Modelica Tools 1",
 		 "room": "MA5"},
+	"T2-X": {"papers": [],
+		 "name": "Exhibition Session",
+		 "room": "Exh"},
 	"T3-A": {"papers": ["56", "159", "175", "167"], 
 		 "name": "Automotive Applications: FMI & HIL", 
 		 "room": "MA1"},
@@ -48,6 +55,30 @@
 	"T3-E": {"papers": ["171", "93", "146", "155"], 
 		 "name": "Modelica Tools 2", 
 		 "room": "MA5"},
+	"T3-X": {"papers": [],
+		 "name": "Exhibition Session",
+		 "room": "Exh"},
+	"Ve-A": {"papers": [],
+		 "name": "Modelon Vendor Session",
+		 "room": "MA1"},
+	"Ve-B": {"papers": [],
+		 "name": "LMS Vendor Session",
+		 "room": "MA2"},
+	"Ve-C": {"papers": [],
+		 "name": "ITI Vendor Session",
+		 "room": "MA3"},
+	"Ve-D": {"papers": [],
+		 "name": "Maplesoft Vendor Session",
+		 "room": "MA4"},
+	"Ve-E": {"papers": [],
+		 "name": "OSMC Vendor Session",
+		 "room": "MA5"},
+	"Ve-F": {"papers": [],
+		 "name": "Dassault Systemes Vendor Session",
+		 "room": "MA6"},
+	"Co-D": {"papers": [],
+		 "name": "Conference Dinner",
+		 "room": "AF Castle"},
 	"W1-A": {"papers": ["76", "82", "142"], 
 		 "name": "Aerospace Applications 1", 
 		 "room": "MA1"},
@@ -63,6 +94,9 @@
 	"W1-E": {"papers": ["55", "97", "131"], 
 		 "name": "Hybrid Systems", 
 		 "room": "MA5"},
+	"W1-X": {"papers": [],
+		 "name": "Exhibition Session",
+		 "room": "Exh"},
 	"W2-A": {"papers": ["8", "10", "45", "62"], 
 		 "name": "Aerospace Applications 2", 
 		 "room": "MA1"},
@@ -78,12 +112,15 @@
 	"W2-E": {"papers": ["125", "153", "44", "43"], 
 		 "name": "Modelica Tools 3", 
 		 "room": "MA5"},
+	"W2-X": {"papers": [],
+		 "name": "Exhibition Session",
+		 "room": "Exh"},
 	"Po-A": {"papers": ["14", "20", "17", "27", "31", "41", "63",
 			    "72", "81", "83", "89", "111", "112",
 			    "124", "133", "135", "139", "144", "145",
 			    "148", "151", "163"],
 		 "name": "Poster Session",
-		 "room": "TBD"},
+		 "room": "Basement"},
 	"W3-A": {"papers": ["26", "28", "115", "118"], 
 		 "name": "Mechanical Systems", 
 		 "room": "MA1"},
@@ -98,7 +135,10 @@
 		 "room": "MA4"},
 	"W3-E": {"papers": ["168", "30", "170", "77"], 
 		 "name": "Web-related Modelica Tools", 
-		 "room": "MA5"}
+		 "room": "MA5"},
+	"W3-X": {"papers": [],
+		 "name": "Exhibition Session",
+		 "room": "Exh"}
     },
     "program": [
 	{
@@ -122,21 +162,39 @@
 	    "day": "Tuesday",
 	    "slots": [
 		{
+		    "id": "Op",
+		    "time": "9:00-10:10",
+		    "slot": "<2014-03-11 Tue 9:00-10:10>", 
+		    "sessions": ["Op-A"]
+		},
+		{
 		    "id": "T1",
 		    "time": "10:40-12:00",
 		    "slot": "<2014-03-11 Tue 10:40-12:00>", 
-		    "sessions": ["T1-A", "T1-B", "T1-C", "T1-D", "T1-E"]
+		    "sessions": ["T1-A", "T1-B", "T1-C", "T1-D", "T1-E", "T1-X"]
 		},{
 		    "id": "T2",
 		    "time": "13:20-14:40",
 		    "slot": "<2014-03-11 Tue 13:20-14:40>", 
-		    "sessions": ["T2-A", "T2-B", "T2-C", "T2-D", "T2-E"]
+		    "sessions": ["T2-A", "T2-B", "T2-C", "T2-D", "T2-E", "T2-X"]
 		}, 
 		{
 		    "id": "T3",
 		    "time": "15:10-16:30",
 		    "slot": "<2014-03-11 Tue 15:10-16:30>", 
-		    "sessions": ["T3-A", "T3-B", "T3-C", "T3-D", "T3-E"]
+		    "sessions": ["T3-A", "T3-B", "T3-C", "T3-D", "T3-E", "T3-X"]
+		},
+		{
+		    "id": "Ve",
+		    "time": "17:00-19:00",
+		    "slot": "<2014-03-11 Tue 17:00-19:00>", 
+		    "sessions": ["Ve-A", "Ve-B", "Ve-C", "Ve-D", "Ve-E", "Ve-F"]
+		},
+		{
+		    "id": "Co",
+		    "time": "19:00-22:00",
+		    "slot": "<2014-03-11 Tue 19:00-22:00>", 
+		    "sessions": ["Co-D"]
 		}
 	    ]
 	}, {
@@ -146,13 +204,13 @@
 		    "id": "W1",
 		    "time": "9:15-10:30",
 		    "slot": "<2014-03-12 Wed 09:15-10:30>", 
-		    "sessions": ["W1-A", "W1-B", "W1-C", "W1-D", "W1-E"]
+		    "sessions": ["W1-A", "W1-B", "W1-C", "W1-D", "W1-E", "W1-X"]
 		}, 
 		{
 		    "id": "W2",
 		    "time": "11:00-12:20",
 		    "slot": "<2014-03-12 Wed 11:00-12:20>", 
-		    "sessions": ["W2-A", "W2-B", "W2-C", "W2-D", "W2-E"]
+		    "sessions": ["W2-A", "W2-B", "W2-C", "W2-D", "W2-E", "W2-X"]
 		},
 		{
 		    "id": "Po",
@@ -164,7 +222,7 @@
 		    "id": "W3",
 		    "time": "14:00-15:20",
 		    "slot": "<2014-03-11 Tue 14:00-15:20>", 
-		    "sessions": ["W3-A", "W3-B", "W3-C", "W3-D", "W3-E"]
+		    "sessions": ["W3-A", "W3-B", "W3-C", "W3-D", "W3-E", "W3-X"]
 		}
 	    ]
 	}]
