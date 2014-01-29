@@ -44,3 +44,8 @@ body {
 .slotrow {
     padding-bottom: 15px;
 }
+
+.wider, .panel-heading, .panel-body {
+    padding-left: 5px;
+    padding-right: 5px;
+}
