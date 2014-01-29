@@ -138,7 +138,10 @@
 		 "room": "MA5"},
 	"W3-X": {"papers": [],
 		 "name": "Exhibition Session",
-		 "room": "Exh"}
+		 "room": "Exh"},
+	"Cl-X": {"papers": [],
+		 "name": "Library Awards and Closing",
+		 "room": "TBD"}
     },
     "program": [
 	{
@@ -221,8 +224,14 @@
  		{
 		    "id": "W3",
 		    "time": "14:00-15:20",
-		    "slot": "<2014-03-11 Tue 14:00-15:20>", 
+		    "slot": "<2014-03-11 Wed 14:00-15:20>", 
 		    "sessions": ["W3-A", "W3-B", "W3-C", "W3-D", "W3-E", "W3-X"]
+		},
+ 		{
+		    "id": "Cl",
+		    "time": "15:50-17:00",
+		    "slot": "<2014-03-11 Wed 15:50-17:00>", 
+		    "sessions": ["Cl-X"]
 		}
 	    ]
 	}]
