@@ -3,7 +3,15 @@ import xml.etree.ElementTree as ET
 
 tree = ET.parse('easychair.xml')
 submissions = tree.find("submissions").iter('submission')
+organizations = tree.find("organizations").iter('organization')
 subs_by_num = {}
+orgs = {}
+
+for org in organizations:
+    id = org.find('id').text
+    name = org.find('name').text
+    orgs[id] = name
+
 
 for sub in submissions:
     num = sub.find('number').text
@@ -11,8 +19,11 @@ for sub in submissions:
     abstract = sub.find('abstract').text
     authors = []
     for a in sub.find('authors').iter("author"):
-        authors.append("%s %s" % (a.find("firstName").text,
-                                  a.find("lastName").text))
+        orgid = a.find('organizationId').text
+        org = orgs[orgid]
+        authors.append("%s %s (%s)" % (a.find("firstName").text,
+                                       a.find("lastName").text,
+                                       org))
     keywords = []
     for kw in sub.find('keywords').iter("keyword"):
         keywords.append(kw.text)
