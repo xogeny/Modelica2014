@@ -3,7 +3,6 @@
 angular.module('AppMod2014App')
   .controller('MainCtrl', function ($scope, Schedule, Userdata, topicFilter) {
       $scope.schedule = Schedule;
-      //$scope.choices = {"T1": "B", "T2": "A"};
       $scope.choices = Userdata.get("choices");
 
       /* This is enormously ugly but it was the only way I found that I could
@@ -12,7 +11,6 @@ angular.module('AppMod2014App')
       $scope.$watch(function() { 
 	  return angular.toJson($scope.choices);
       }, function(nv, ov) {
-	  //console.log("Choices STRING changed from "+ov+" to "+nv);
 	  Userdata.set("choices", $scope.choices);
       });
 

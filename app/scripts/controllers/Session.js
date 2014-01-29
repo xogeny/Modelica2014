@@ -5,9 +5,17 @@ angular.module('AppMod2014App')
       $scope.session = Schedule["sessions"][$routeParams.id];
       $scope.id = $routeParams.id;
       $scope.papers = Schedule["papers"]
-      $scope.userdata = Userdata
+      $scope.choices = Userdata.get("choices");
+
+      /* See main.js for why I did it this (stupid) way */
+      $scope.$watch(function() { 
+	  return angular.toJson($scope.choices);
+      }, function(nv, ov) {
+	  Userdata.set("choices", $scope.choices);
+      });
+
       $scope.slot = $routeParams.id[0]+$routeParams.id[1];
-      $scope.selected = Userdata['choices'][$scope.slot];
+      $scope.selected = $scope.choices[$scope.slot];
       $scope.searchTerm = topicFilter.current;
       $scope.$watch('searchTerm', function (nv, ov) {
 	  topicFilter.current = nv;

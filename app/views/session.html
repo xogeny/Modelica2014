@@ -27,18 +27,18 @@
       <div class="panel-body">
 	<div class="pull-right">
 	  <button class="btn btn-success"
-		  ng-show="slot+'-'+userdata['choices'][slot]==id">
+		  ng-show="slot+'-'+choices[slot]==id">
 	    <span class="glyphicon glyphicon-check"></span>&nbsp;Selected
 	  </button>
-	  <button ng-hide="userdata['choices'][slot]==null || slot+'-'+userdata['choices'][slot]==id"
-		  class="btn btn-warning" ng-click="userdata['choices'][slot]=id[3]"
+	  <button ng-hide="choices[slot]==null || slot+'-'+choices[slot]==id"
+		  class="btn btn-warning" ng-click="choices[slot]=id[3]"
 		  id="switch"
 		  data-toggle="tooltip"
 		  data-title="Dummy">
 	    Switch
 	  </button>
-	  <button ng-show="userdata['choices'][slot]==null"
-		  class="btn btn-primary" ng-click="userdata['choices'][slot]=id[3]">
+	  <button ng-show="choices[slot]==null"
+		  class="btn btn-primary" ng-click="choices[slot]=id[3]">
 	    Select
 	  </button>
 	</div>
