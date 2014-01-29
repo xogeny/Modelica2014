@@ -43,9 +43,13 @@
 			     ng-value="session[3]" ng-model="userdata['choices'][slot.id]">
 		    </span>
 		    <span>
-		      <a href="#/session/{{session}}">
+		      <a href="#/session/{{session}}"
+			 ng-show="schedule['sessions'][session].papers.length>0">
 			{{schedule["sessions"][session].name}}
 		      </a>
+		      <span ng-show="schedule['sessions'][session].papers.length==0">
+			{{schedule["sessions"][session].name}}
+		      </span>
 		    </span>
 		  </div>
 		</div>
