@@ -19,6 +19,9 @@ angular.module('AppMod2014App')
 	  if (current==="") return true;
 	  if (details["title"].toLowerCase().indexOf(current)>=0) return true;
 	  if (details["abstract"].toLowerCase().indexOf(current)>=0) return true;
+	  for(var i=0;i<details["keywords"].length;i++) {
+	      if (details["keywords"][i].toLowerCase().indexOf(current)>=0) return true;
+	  }
 	  for(var i=0;i<details["authors"].length;i++) {
 	      if (details["authors"][i].toLowerCase().indexOf(current)>=0) return true;
 	  }
