@@ -13,8 +13,12 @@ for sub in submissions:
     for a in sub.find('authors').iter("author"):
         authors.append("%s %s" % (a.find("firstName").text,
                                   a.find("lastName").text))
+    keywords = []
+    for kw in sub.find('keywords').iter("keyword"):
+        keywords.append(kw.text)
     subs_by_num[num] = {"title": title,
                         "abstract": abstract,
+                        "keywords": keywords,
                         "authors": authors}
 
 with open("schedule.json", "r") as fp:
