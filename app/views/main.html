@@ -1,10 +1,17 @@
-<div class="row">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div id="search" class="form-group search-box">
+    <input type="text" class="form-control" placeholder="Search Term (e.g., Xogeny)"
+	   ng-model="searchTerm">
+  </div>
+</nav>
+
+<div class="row firstrow">
   <div class="col-lg-12 text-center">
     <h2>10th International Modelica Conference</h2>
     <h4>Conference Schedule App</h4>
   </div>
 </div>
-<div class="row">
+<div class="row lastrow">
   <div class="col-xs-12 wider">
     <div class="panel-group">
       <div class="panel panel-default" ng-repeat="day in schedule.program">
@@ -108,11 +115,7 @@
 </div><!-- /.modal -->
 
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-  <div class="form-group search-box">
-    <input type="text" class="form-control" placeholder="Search Term (e.g., Xogeny)"
-	   ng-model="searchTerm">
-    <span class="tag pull-left">
-      Created by <a data-toggle="modal" data-target="#xogenyInfo">Xogeny</a>
-    </span>
-  </div>
+  <span class="tag pull-right">
+    Created by <a data-toggle="modal" data-target="#xogenyInfo">Xogeny</a>
+  </span>
 </nav>

@@ -28,12 +28,12 @@ body {
     padding-right: 20px;
 }
 
-#main {
-    padding-bottom: 60px;
+.lastrow {
+    padding-bottom: 25px;
 }
 
-#session {
-    padding-top: 60px;
+.firstrow {
+    padding-top: 45px;
 }
 
 .tag {
@@ -48,4 +48,13 @@ body {
 .wider, .panel-heading, .panel-body {
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.navbar {
+    min-height: 25px;
+}
+
+#search {
+    margin-bottom: 0px;
+    padding-bottom: 5px;
 }

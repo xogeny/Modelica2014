@@ -1,24 +1,13 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="form-group search-box">
+  <div class="form-group">
     <a class="btn pull-left" href="#">
       <span class="glyphicon glyphicon-th-list"></span>
       &nbsp;Return to conference program
     </a>
   </div>
 </nav>
-<!--
-<div class="row">
-  <div class="col-xs-12">
-    <p>
-      <a class="btn pull-left" href="#">
-	<span class="glyphicon glyphicon-th-list"></span>
-	&nbsp;Return to conference program
-      </a>
-    </p>
-  </div>
-</div>
--->
-<div id="session" class="row">
+
+<div class="row firstrow lastrow">
   <div class="col-lg-12">
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -99,10 +88,9 @@
     </div>
   </div>
 </div>
+
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-  <div class="form-group search-box">
-    <input type="text" class="form-control" placeholder="Search Term (e.g., Xogeny)"
-	   ng-model="searchTerm">
-    <span class="tag pull-left">Created by <a href="http://www.xogeny.com/">Xogeny</a></span>
-  </div>
+  <span class="tag pull-right">
+    Created by <a data-toggle="modal" data-target="#xogenyInfo">Xogeny</a>
+  </span>
 </nav>
