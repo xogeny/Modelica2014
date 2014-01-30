@@ -27,8 +27,9 @@
       <div class="panel-body">
 	<div class="pull-right">
 	  <button class="btn btn-success"
+		  ng-click="choices[slot]=null"
 		  ng-show="slot+'-'+choices[slot]==id">
-	    <span class="glyphicon glyphicon-check"></span>&nbsp;Selected
+	    <span class="glyphicon glyphicon-check"></span>&nbsp;Unselect
 	  </button>
 	  <button ng-hide="choices[slot]==null || slot+'-'+choices[slot]==id"
 		  class="btn btn-warning" ng-click="choices[slot]=id[3]"

@@ -34,6 +34,8 @@
 	    <div class="slotrow row" ng-repeat="slotid in day.slots | filter:showSlot">
 	      <div class="col-xs-2">
 		{{schedule['slots'][slotid].time}}
+		<br>
+		<a class="btn btn-default btn-xs" ng-click="choices[slotid]=null">clear</a>
 	      </div>
 	      <div class="col-xs-7">
 		<div ng-repeat="session in schedule['slots'][slotid].sessions | filter:showSession">
