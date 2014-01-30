@@ -28,7 +28,8 @@ angular.module('AppMod2014App')
       $scope.showDay = function(day) {
 	  return topicFilter["checkDay"](day, topicFilter.current.toLowerCase());
       };
-      $scope.showSlot = function(slot) {
+      $scope.showSlot = function(slotid) {
+	  var slot = Schedule['slots'][slotid];
 	  return topicFilter["checkSlot"](slot, topicFilter.current.toLowerCase());
       };
       $scope.showSession = function(session) {

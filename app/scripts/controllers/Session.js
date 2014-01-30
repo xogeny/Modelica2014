@@ -5,6 +5,7 @@ angular.module('AppMod2014App')
       $scope.session = Schedule["sessions"][$routeParams.id];
       $scope.id = $routeParams.id;
       $scope.papers = Schedule["papers"]
+      $scope.slots = Schedule["slots"]
       $scope.choices = Userdata.get("choices");
 
       /* See main.js for why I did it this (stupid) way */

@@ -31,16 +31,16 @@
 		<h5>Room</h5>
 	      </div>
 	    </div>
-	    <div class="slotrow row" ng-repeat="slot in day.slots | filter:showSlot">
+	    <div class="slotrow row" ng-repeat="slotid in day.slots | filter:showSlot">
 	      <div class="col-xs-2">
-		{{slot.time}}
+		{{schedule['slots'][slotid].time}}
 	      </div>
 	      <div class="col-xs-7">
-		<div ng-repeat="session in slot.sessions | filter:showSession">
+		<div ng-repeat="session in schedule['slots'][slotid].sessions | filter:showSession">
 		  <div>
 		    <span>
-		      <input type="radio" name="{{slot.id}}"
-			     ng-value="session[3]" ng-model="choices[slot.id]">
+		      <input type="radio" name="{{slotid}}"
+			     ng-value="session[3]" ng-model="choices[slotid]">
 		    </span>
 		    <span>
 		      <a href="#/session/{{session}}"
@@ -55,7 +55,7 @@
 		</div>
 	      </div>
 	      <div class="col-xs-2">
-		<div ng-repeat="session in slot.sessions | filter:showSession">
+		<div ng-repeat="session in schedule['slots'][slotid].sessions | filter:showSession">
 		  {{schedule["sessions"][session].room}}
 		</div>
 	      </div>
