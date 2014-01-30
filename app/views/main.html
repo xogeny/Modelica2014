@@ -33,7 +33,7 @@
 	    </div>
 	    <div class="slotrow row" ng-repeat="slotid in day.slots | filter:showSlot">
 	      <div class="col-xs-2">
-		{{schedule['slots'][slotid].time}}
+		<span ng-bind-html="schedule['slots'][slotid].time"></span>
 		<br>
 		<a class="btn btn-default btn-xs" ng-click="choices[slotid]=null">clear</a>
 	      </div>

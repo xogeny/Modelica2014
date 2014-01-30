@@ -7,7 +7,7 @@ function mod2014_reset() {
 angular.module('AppMod2014App')
   .service('Userdata', function Userdata() {
       var baseData = {
-	  "version": 2,
+	  "version": 4,
 	  "disposition": {"15": "attend"},
 	  "ratings": {"15": 2},
 	  "choices": {"T1": null, "T2": null, "T3": null, "T4": null,
