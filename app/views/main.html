@@ -69,9 +69,48 @@
 <div class="row">
   &nbsp;
 </div>
+
+<div class="modal fade" id="xogenyInfo">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"
+		aria-hidden="true">&times;
+	</button>
+	<h4 class="modal-title">Brought to you by Xogeny</h4>
+      </div>
+      <div class="modal-body">
+	<img class="img-responsive" src="images/LogoAndName.png">
+	<br>
+	<p class="lead">
+	  Developers of web-based engineering applications and proud
+	  supporters of the Modelica community.
+	</p>
+	<p class="lead">
+	  For more information about Xogeny, please visit
+	  our <a href="http://www.xogeny.com">web site</a>, check
+	  out our <a href="http://blog.xogeny.com/">corporate blog</a>
+	  or <a href="http://www.twitter.com/xogeny">follow us on
+	  twitter</a>.
+	</p>
+      </div>
+      <div class="modal-footer">
+	<p class="text-center">
+	  This application is offered free of charge to the Modelica
+	  community.  Special thanks to Dietmar Winkler for inspiration
+	  and encouragement.
+	</p>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
   <div class="form-group search-box">
-    <input type="text" class="form-control" placeholder="Search Term" ng-model="searchTerm">
-    <span class="tag pull-left">Created by <a href="http://www.xogeny.com/">Xogeny</a></span>
+    <input type="text" class="form-control" placeholder="Search Term (e.g., Xogeny)"
+	   ng-model="searchTerm">
+    <span class="tag pull-left">
+      Created by <a data-toggle="modal" data-target="#xogenyInfo">Xogeny</a>
+    </span>
   </div>
 </nav>
