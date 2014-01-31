@@ -1,8 +1,31 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div id="search" class="form-group search-box">
-    <input type="text" class="form-control" placeholder="Search Term (e.g., Xogeny)"
-	   ng-model="searchTerm">
+  <form id="search">
+    <div class="input-group">
+      <input type="Search" class="form-control" placeholder="Search Term (e.g., Xogeny)"
+	     ng-model="searchTerm">
+      <div class="input-group-btn">
+        <button class="btn btn-default" ng-click="searchTerm=''">
+          <span class="glyphicon glyphicon-remove"></span>
+        </button>
+      </div>
+    </div>
+  </form>
+<!--
+  <div id="search" class="form-inline search-box">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Search Term (e.g., Xogeny)"
+	     ng-model="searchTerm">
+    </div>
+    <div class="form-group col-xs-11">
+      <input type="text" class="form-control" placeholder="Search Term (e.g., Xogeny)"
+	     ng-model="searchTerm">
+    </div>
+    <div class="form-group col-xs-1">
+      <button class="form-control pull-right" type="button"
+	      class="close" ng-click="searchTerm=''" aria-hidden="true">&times;</button>
+    </div>
   </div>
+    -->
 </nav>
 
 <div class="row firstrow">
