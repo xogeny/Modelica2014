@@ -63,3 +63,8 @@ body {
     margin-bottom: 5px;
     margin-right: 5px;
 }
+
+#close {
+    margin-top: 15px;
+    margin-right: 15px;
+}

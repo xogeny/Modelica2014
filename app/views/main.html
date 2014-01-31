@@ -1,5 +1,17 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div id="search">
+      <input type="Search" class="form-control" placeholder="Search Term (e.g., Xogeny)"
+	     ng-model="searchTerm">
+  </div>
+  <a class="btn-xs pull-right" ng-show="searchTerm!=''" ng-click="searchTerm=''">
+    Clear Search&nbsp;
+    <span class="glyphicon glyphicon-remove"></span>
+  </a>
+</nav>
+<!--
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div id="search">
     <div class="input-group">
       <input type="Search" class="form-control" placeholder="Search Term (e.g., Xogeny)"
 	     ng-model="searchTerm">
@@ -12,6 +24,13 @@
   </div>
 </nav>
 
+-->
+
+<div class="row" ng-show="searchTerm!=''">
+  <div class="col-lg-12">
+    &nbsp;
+  </div>
+</div>
 <div class="row firstrow">
   <div class="col-lg-12 text-center">
     <h3>10th International Modelica Conference</h3>
@@ -21,7 +40,9 @@
 <div class="row lastrow">
   <div class="col-xs-12 wider">
     <div class="panel-group">
-      <div class="panel panel-default" ng-repeat="day in schedule.program">
+      <div class="panel panel-default"
+	   ng-show="showDay(day)"
+	   ng-repeat="day in schedule.program">
 	<div class="panel-heading">
 	  <h4 class="panel-title">
 	    <a data-toggle="collapse" data-parent="#days" href="#day-{{day.day}}">

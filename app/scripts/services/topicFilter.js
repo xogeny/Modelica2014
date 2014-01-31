@@ -37,7 +37,8 @@ angular.module('AppMod2014App')
       var checkDay = function(day, current) {
 	  if (current==="") return true;
 	  for(var i=0;i<day.slots.length;i++) {
-	      if (checkSlot(day.slots[i], current)) return true;
+	      var slot = Schedule['slots'][day.slots[i]];
+	      if (checkSlot(slot, current)) return true;
 	  }
 	  return false;
       }
