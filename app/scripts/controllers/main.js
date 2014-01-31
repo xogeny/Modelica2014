@@ -4,7 +4,15 @@ angular.module('AppMod2014App')
   .controller('MainCtrl', function ($scope, Schedule, Userdata, topicFilter) {
       $scope.schedule = Schedule;
       $scope.choices = Userdata.get("choices");
+      $scope.disposition = Userdata.get("disposition");
 
+      $scope.anyDisposition = function(session) {
+	  for (var i=0;i<$scope.schedule['sessions'][session].papers.length;i++) {
+	      if ($scope.disposition[$scope.schedule['sessions'][session].papers[i]]!=null)
+		  return true;
+	  }
+	  return false;
+      };
       /* This is enormously ugly but it was the only way I found that I could
 	 work around an issue with Firefox not reliably detecting changes...ARGH!
 	 (see more below) */
@@ -20,6 +28,12 @@ angular.module('AppMod2014App')
 	  console.log("Choices changed from "+ov+" to "+nv);
       }, true);
       */
+
+      $scope.$watch(function() {
+	  return angular.toJson($scope.disposition);
+      }, function (nv, ov) {
+	  Userdata.set("disposition", $scope.disposition);
+      });
 
       $scope.searchTerm = topicFilter.current;
       $scope.$watch('searchTerm', function (nv, ov) {

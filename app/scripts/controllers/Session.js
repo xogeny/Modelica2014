@@ -21,9 +21,11 @@ angular.module('AppMod2014App')
 	  console.log("Ratings updated");
       }, true);
 
-      $scope.$watch('disposition', function(nv, ov) {
-	  console.log("Dispositions updated");
-      }, true);
+      $scope.$watch(function() {
+	  return angular.toJson($scope.disposition);
+      }, function (nv, ov) {
+	  Userdata.set("disposition", $scope.disposition);
+      });
 
       $scope.slot = $routeParams.id[0]+$routeParams.id[1];
       $scope.selected = $scope.choices[$scope.slot];

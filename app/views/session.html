@@ -37,8 +37,12 @@
 
 	<div class="panel-group" id="accordion">
 	  <div ng-repeat="pnum in session.papers | filter:showPaper"
-	       class="panel panel-default" ng-class="{'panel-success': ratings[pnum]==2, 'panel-info': ratings[pnum]==1, 'panel-primary': ratings[pnum]==2}">
+	       class="panel panel-default"
+	       ng-class="{'panel-success': disposition[pnum]=='attend',
+			  'panel-info': disposition[pnum]=='interesting',
+			  'panel-default': disposition[pnum]==null}">
 	    <div class="panel-heading">
+
 	      <h4 class="panel-title">
 		<a data-toggle="collapse"
 		   data-parent="#accordion"
@@ -46,30 +50,53 @@
 		  {{papers[pnum].title}}
 		</a>
 	      </h4>
+
 	    </div>
 	    <div id="paper-{{pnum}}" class="panel-collapse collapse out">
 	      <div class="panel-body">
-		<!--
-		<div class="pull-right btn-group">
-		  <button class="btn btn-default btn-xs"
-			  ng-click="disposition[pnum]='attend'"
-			  ng-class="{'btn-success': disposition[pnum]=='attend'}">
-		    Attend
-		  </button>
-		  <button class="btn btn-default btn-xs"
-			  ng-click="disposition[pnum]='interesting'"
-			  ng-class="{'btn-info': disposition[pnum]=='interesting'}">
-		    Interesting
-		  </button>
-		  <button class="btn btn-default btn-xs"
-			  ng-click="disposition[pnum]=null">
-		    Neutral
-		  </button>
-		</div>
-		-->
 		<table class="table table-condensed">
 		  <thead>
-		    <tr><th>Authors</th></tr>
+		    <tr>
+		      <th>
+			Authors
+			<div class="pull-right">
+			  <span class="btn btn-default btn-xs btn-success"
+				ng-show="disposition[pnum]=='attend'">
+			    Attend
+			  </span>
+			  <span class="btn btn-default btn-xs btn-info"
+				ng-show="disposition[pnum]=='interesting'">
+			    Interesting
+			  </span>
+			  <div class="btn-group">
+			    <button data-toggle="dropdown"
+				    class="btn btn-xs btn-default dropdown-toggle"
+				    type="button" id="btnGroupVerticalDrop1">
+			      Impression
+			      <span class="caret"></span>
+			    </button>
+			    <ul aria-labelledby="btnGroupVerticalDrop1" role="menu"
+				class="dropdown-menu">
+			      <li>
+				<a ng-click="disposition[pnum]='attend'">
+				  Attend
+				</a>
+			      </li>
+			      <li>
+				<a ng-click="disposition[pnum]='interesting'">
+				  Interesting
+				</a>
+			      </li>
+			      <li>
+				<a ng-click="disposition[pnum]=null">
+				  Neutral
+			        </a>
+			      </li>
+			    </ul>
+			  </div>
+			</div>
+		      </th>
+		    </tr>
 		  </thead>
 		  <tbody>
 		    <tr ng-repeat="author in papers[pnum].authors"><td>{{author}}</td></tr>
