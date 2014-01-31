@@ -27,6 +27,36 @@
 	    Nothing on this day matches your search criteria.
 	  </div>
 	  <div class="panel-body" ng-show="showDay(day)">
+	    <table class="table">
+	      <thead><th>Time</th><th>Description</th><th>Room</th></thead>
+	      <tbody ng-repeat="slotid in day.slots | filter:showSlot">
+		<tr ng-repeat="session in slist = schedule['slots'][slotid].sessions | filter:showSession">
+		  <td ng-show="$first" rowspan="{{slist.length}}">
+		      <span ng-bind-html="schedule['slots'][slotid].time"></span>
+		      <br>
+		      <a class="btn btn-default btn-xs" ng-click="choices[slotid]=null">clear</a>
+		  </td>
+		  <td>
+		    <span>
+		      <input type="radio" name="{{slotid}}"
+			     ng-value="session[3]" ng-model="choices[slotid]">
+		    </span>
+		    <span>
+		      <a href="#/session/{{session}}"
+			 ng-show="schedule['sessions'][session].papers.length>0">
+			{{schedule["sessions"][session].name}}
+		      </a>
+		      <span ng-show="schedule['sessions'][session].papers.length==0">
+			{{schedule["sessions"][session].name}}
+		      </span>
+		    </span>
+		  </td>
+		  <td>
+		    {{schedule["sessions"][session].room}}
+		  </td>
+		</tr>
+	      </tbody>
+	    </table>
 	    <div class="row">
 	      <div class="col-xs-2">
 		<h5>Time</h5>
