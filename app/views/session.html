@@ -2,7 +2,11 @@
   <div class="form-group">
     <a class="btn pull-left" href="#">
       <span class="glyphicon glyphicon-th-list"></span>
-      &nbsp;Return to conference program
+      &nbsp;Back
+    </a>
+    <a class="btn pull-right" ng-show="searchTerm!=''" ng-click="searchTerm=''">
+      Clear Search&nbsp;
+      <span class="glyphicon glyphicon-remove"></span>
     </a>
   </div>
 </nav>
