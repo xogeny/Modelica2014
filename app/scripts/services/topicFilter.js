@@ -2,13 +2,25 @@
 
 angular.module('AppMod2014App')
   .service('topicFilter', function topicFilter(Schedule) {
+      var match = function(term, text) {
+	  var lower = text.toLowerCase();
+	  var terms = term.toLowerCase().match(/\b\w+\b/g);
+	  for(var i=0;i<terms.length;i++) {
+	      if (lower.indexOf(terms[i])==-1) {
+		  return false;
+	      }
+	  }
+	  return true;
+	  //return text.toLowerCase().indexOf(term)>=0;
+      }
+
       var checkSession = function(session, current) {
 	  var details = Schedule["sessions"][session];
 	  var name = details["name"];
 	  var lcname = name.toLowerCase();
 	  var papers = details["papers"];
 	  if (current==="") return true;
-	  if (lcname.indexOf(current)>=0) return true;
+	  if (match(current, lcname)) return true;
 	  for(var i=0;i<papers.length;i++) {
 	      if (checkPaper(papers[i], current)) return true;
 	  }
@@ -17,15 +29,22 @@ angular.module('AppMod2014App')
       var checkPaper = function(paper, current) {
 	  var details = Schedule["papers"][paper];
 	  if (current==="") return true;
-	  if (details["title"].toLowerCase().indexOf(current)>=0) return true;
-	  if (details["abstract"].toLowerCase().indexOf(current)>=0) return true;
+	  var corpus = details["title"]+
+	      details["abstract"]+
+	      details["keywords"].join(" ")+
+	      details["authors"].join(" ");
+	  /*
+	  if (match(current, details["title"])) return true;
+	  if (match(current, details["abstract"])) return true;
 	  for(var i=0;i<details["keywords"].length;i++) {
-	      if (details["keywords"][i].toLowerCase().indexOf(current)>=0) return true;
-	  }
+	      if (match(current, details["keywords"][i])) return true;
+          }
 	  for(var i=0;i<details["authors"].length;i++) {
-	      if (details["authors"][i].toLowerCase().indexOf(current)>=0) return true;
+	      if (match(current, details["authors"][i])) return true;
 	  }
-	  return false;
+	  	  return false;
+	  */
+	  return match(current, corpus);
       }
       var checkSlot = function(slot, current) {
 	  if (current==="") return true;
