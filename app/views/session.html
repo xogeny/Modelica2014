@@ -38,9 +38,11 @@
 	<div class="panel-group" id="accordion">
 	  <div ng-repeat="pnum in session.papers | filter:showPaper"
 	       class="panel panel-default"
-	       ng-class="{'panel-success': disposition[pnum]=='attend',
-			  'panel-info': disposition[pnum]=='interesting',
-			  'panel-default': disposition[pnum]==null}">
+	       ng-class="{'panel-success': disposition[pnum]==ATTEND,
+			  'panel-warning': disposition[pnum]==CHAIRING,
+			  'panel-primary': disposition[pnum]==PRESENTING,
+			  'panel-info': disposition[pnum]==INTERESTING,
+			  'panel-default': disposition[pnum]==NEUTRAL}">
 	    <div class="panel-heading">
 
 	      <h4 class="panel-title">
@@ -61,12 +63,20 @@
 			Authors
 			<div class="pull-right">
 			  <span class="btn btn-default btn-xs btn-success"
-				ng-show="disposition[pnum]=='attend'">
+				ng-show="disposition[pnum]==ATTEND">
 			    Attend
 			  </span>
 			  <span class="btn btn-default btn-xs btn-info"
-				ng-show="disposition[pnum]=='interesting'">
+				ng-show="disposition[pnum]==INTERESTING">
 			    Interesting
+			  </span>
+			  <span class="btn btn-default btn-xs btn-primary"
+				ng-show="disposition[pnum]==PRESENTING">
+			    Presenting
+			  </span>
+			  <span class="btn btn-default btn-xs btn-warning"
+				ng-show="disposition[pnum]==CHAIRING">
+			    Chairing
 			  </span>
 			  <div class="btn-group">
 			    <button data-toggle="dropdown"
@@ -78,13 +88,23 @@
 			    <ul aria-labelledby="btnGroupVerticalDrop1" role="menu"
 				class="dropdown-menu">
 			      <li>
-				<a ng-click="disposition[pnum]='attend'">
+				<a ng-click="disposition[pnum]=ATTEND">
 				  Attend
 				</a>
 			      </li>
 			      <li>
-				<a ng-click="disposition[pnum]='interesting'">
+				<a ng-click="disposition[pnum]=INTERESTING">
 				  Interesting
+				</a>
+			      </li>
+			      <li>
+				<a ng-click="disposition[pnum]=PRESENTING">
+				  Presenting
+				</a>
+			      </li>
+			      <li>
+				<a ng-click="disposition[pnum]=CHAIRING">
+				  Chairing
 				</a>
 			      </li>
 			      <li>

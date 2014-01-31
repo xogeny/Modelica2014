@@ -10,6 +10,12 @@ angular.module('AppMod2014App')
       $scope.slots = Schedule["slots"]
       $scope.choices = Userdata.get("choices");
 
+      $scope.PRESENTING = 'presenting';
+      $scope.CHAIRING = 'chairing';
+      $scope.ATTEND = 'attend';
+      $scope.INTERESTING = 'interesting';
+      $scope.NEUTRAL = null;
+
       /* See main.js for why I did it this (stupid) way */
       $scope.$watch(function() { 
 	  return angular.toJson($scope.choices);

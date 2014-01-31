@@ -62,16 +62,14 @@
 		    <br>
 		    <div class="btn-group" ng-show="anyDisposition(session)">
 		      <button ng-repeat="pnum in schedule['sessions'][session].papers"
-			      style="width: 50px"
-			      ng-class="{'btn-success': disposition[pnum]=='attend',
-					 'btn-info': disposition[pnum]=='interesting',
-					 'btn-default': disposition[pnum]==null}"
+			      style="width: 25px"
+			      ng-class="{'btn-success': disposition[pnum]==ATTEND,
+					 'btn-warning': disposition[pnum]==CHAIRING,
+					 'btn-primary': disposition[pnum]==PRESENTING,
+					 'btn-info': disposition[pnum]==INTERESTING,
+					 'btn-default': disposition[pnum]==NEUTRAL}"
 			      class="btn btn-xs">
 			<span>&nbsp;</span>
-			<!--
-			<span ng-show="disposition[pnum]=='attend'">Attend</span>
-			<span ng-show="disposition[pnum]==null">Neutral</span>
-			-->
 		      </button>
 		    </div>
 		  </td>

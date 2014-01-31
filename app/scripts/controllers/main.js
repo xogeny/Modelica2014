@@ -6,6 +6,12 @@ angular.module('AppMod2014App')
       $scope.choices = Userdata.get("choices");
       $scope.disposition = Userdata.get("disposition");
 
+      $scope.PRESENTING = 'presenting';
+      $scope.CHAIRING = 'chairing';
+      $scope.ATTEND = 'attend';
+      $scope.INTERESTING = 'interesting';
+      $scope.NEUTRAL = null;
+
       $scope.anyDisposition = function(session) {
 	  for (var i=0;i<$scope.schedule['sessions'][session].papers.length;i++) {
 	      if ($scope.disposition[$scope.schedule['sessions'][session].papers[i]]!=null)
