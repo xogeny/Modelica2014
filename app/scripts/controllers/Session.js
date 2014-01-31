@@ -5,7 +5,6 @@ angular.module('AppMod2014App')
       $scope.session = Schedule["sessions"][$routeParams.id];
       $scope.id = $routeParams.id;
       $scope.papers = Schedule["papers"]
-      $scope.ratings = Userdata.get("ratings");
       $scope.disposition = Userdata.get("disposition");
       $scope.slots = Schedule["slots"]
       $scope.choices = Userdata.get("choices");
@@ -22,10 +21,6 @@ angular.module('AppMod2014App')
       }, function(nv, ov) {
 	  Userdata.set("choices", $scope.choices);
       });
-
-      $scope.$watch('ratings', function(nv, ov) {
-	  console.log("Ratings updated");
-      }, true);
 
       $scope.$watch(function() {
 	  return angular.toJson($scope.disposition);

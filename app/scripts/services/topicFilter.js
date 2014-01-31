@@ -5,6 +5,7 @@ angular.module('AppMod2014App')
       var match = function(term, text) {
 	  var lower = text.toLowerCase();
 	  var terms = term.toLowerCase().match(/\b\w+\b/g);
+	  if (terms==null) return true;
 	  for(var i=0;i<terms.length;i++) {
 	      if (lower.indexOf(terms[i])==-1) {
 		  return false;

@@ -44,7 +44,7 @@
 	       class="panel panel-default"
 	       ng-class="{'panel-success': disposition[pnum]==ATTEND,
 			  'panel-warning': disposition[pnum]==CHAIRING,
-			  'panel-primary': disposition[pnum]==PRESENTING,
+			  'panel-danger': disposition[pnum]==PRESENTING,
 			  'panel-info': disposition[pnum]==INTERESTING,
 			  'panel-default': disposition[pnum]==NEUTRAL}">
 	    <div class="panel-heading">
@@ -74,7 +74,7 @@
 				ng-show="disposition[pnum]==INTERESTING">
 			    Interesting
 			  </span>
-			  <span class="btn btn-default btn-xs btn-primary"
+			  <span class="btn btn-default btn-xs btn-danger"
 				ng-show="disposition[pnum]==PRESENTING">
 			    Presenting
 			  </span>
@@ -92,27 +92,31 @@
 			    <ul aria-labelledby="btnGroupVerticalDrop1" role="menu"
 				class="dropdown-menu">
 			      <li>
-				<a ng-click="disposition[pnum]=ATTEND">
+				<a class="btn-success btn-xs"
+				   ng-click="disposition[pnum]=ATTEND">
 				  Attend
 				</a>
 			      </li>
 			      <li>
-				<a ng-click="disposition[pnum]=INTERESTING">
+				<a class="btn-info btn-xs"
+				   ng-click="disposition[pnum]=INTERESTING">
 				  Interesting
 				</a>
 			      </li>
 			      <li>
-				<a ng-click="disposition[pnum]=PRESENTING">
+				<a class="btn-danger btn-xs"
+				   ng-click="disposition[pnum]=PRESENTING">
 				  Presenting
 				</a>
 			      </li>
 			      <li>
-				<a ng-click="disposition[pnum]=CHAIRING">
+				<a class="btn-warning btn-xs"
+				   ng-click="disposition[pnum]=CHAIRING">
 				  Chairing
 				</a>
 			      </li>
 			      <li>
-				<a ng-click="disposition[pnum]=null">
+				<a class="btn-xs" ng-click="disposition[pnum]=null">
 				  Neutral
 			        </a>
 			      </li>
