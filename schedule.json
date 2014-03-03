@@ -15,6 +15,11 @@
 	    "slot": "<2014-03-11 Tue 9:00-10:10>", 
 	    "sessions": ["Op-A"]
 	},
+	"WO": {
+	    "time": "8:30-&#8203;9:30",
+	    "slot": "<2014-03-12 Wed 8:30-9:30>", 
+	    "sessions": ["WO-B"]
+	},
 	"T1": {
 	    "time": "10:40-&#8203;12:00",
 	    "slot": "<2014-03-11 Tue 10:40-12:00>", 
@@ -73,8 +78,13 @@
 	"Tu-4": {"papers": [], "name": "Tutorial 4", "room": "MA4"},
 	"Tu-5": {"papers": [], "name": "Tutorial 5", "room": "MA5"},
 	"Tu-6": {"papers": [], "name": "Tutorial 6", "room": "MA6"},
-	"Re-1": {"papers": [], "name": "Welcome Reception", "room": "TBD"},
-	"Op-A": {"papers": [], "name": "Conference Opening and First Keynote", "room": "TBD"},
+	"Re-1": {"papers": [], "name": "Welcome Reception", "room": "Common Area"},
+	"Op-A": {"papers": [],
+		 "name": "Conference Opening, Modelica News, Elmqvist Keynote",
+		 "room": "Aulan, Kårhuset"},
+	"WO-B": {"room": "Aulan, Kårhuset", 
+		 "name": "Jacobson Keynote",
+		 "papers": []},
 	"T1-A": {"papers": ["15", "66", "128", "91"], "name": "FMI 1", "room": "MA1"},
 	"T1-B": {"papers": ["9", "40", "42", "107"],
 		 "name": "Automotive Applications 1", "room": "MA2"},
@@ -89,7 +99,7 @@
 		 "room": "MA5"},
 	"T1-X": {"papers": [],
 		 "name": "Exhibition Session",
-		 "room": "Exh"},
+		 "room": "Common Area"},
 	"T2-A": {"papers": ["104", "68", "110", "130"],
 		 "name": "FMI 2", "room": "MA1"},
 	"T2-B": {"papers": ["73", "75", "78", "88"],
@@ -106,7 +116,7 @@
 		 "room": "MA5"},
 	"T2-X": {"papers": [],
 		 "name": "Exhibition Session",
-		 "room": "Exh"},
+		 "room": "Common Area"},
 	"T3-A": {"papers": ["56", "159", "175", "167"], 
 		 "name": "Automotive Applications: FMI & HIL", 
 		 "room": "MA1"},
@@ -124,7 +134,7 @@
 		 "room": "MA5"},
 	"T3-X": {"papers": [],
 		 "name": "Exhibition Session",
-		 "room": "Exh"},
+		 "room": "Common Area"},
 	"Ve-A": {"papers": [],
 		 "name": "Modelon Vendor Session",
 		 "room": "MA1"},
@@ -163,7 +173,7 @@
 		 "room": "MA5"},
 	"W1-X": {"papers": [],
 		 "name": "Exhibition Session",
-		 "room": "Exh"},
+		 "room": "Common Area"},
 	"W2-A": {"papers": ["8", "10", "45", "62"], 
 		 "name": "Aerospace Applications 2", 
 		 "room": "MA1"},
@@ -181,7 +191,7 @@
 		 "room": "MA5"},
 	"W2-X": {"papers": [],
 		 "name": "Exhibition Session",
-		 "room": "Exh"},
+		 "room": "Common Area"},
 	"Po-A": {"papers": ["14", "20", "17", "27", "31", "41", "63",
 			    "72", "81", "83", "89", "111", "112",
 			    "124", "133", "135", "139", "144", "145",
@@ -191,7 +201,7 @@
 	"W3-A": {"papers": ["26", "28", "115", "118"], 
 		 "name": "Mechanical Systems", 
 		 "room": "MA1"},
-	"W3-B": {"papers": ["126", "166", "173", "174"], 
+	"W3-B": {"papers": ["126", "166", "174", "173"], 
 		 "name": "Power, Energy & Process Applications 2", 
 		 "room": "MA2"},
 	"W3-C": {"papers": ["6", "29", "95", "99"], 
@@ -200,15 +210,15 @@
 	"W3-D": {"papers": ["121", "57", "74", "101"], 
 		 "name": "Thermal Power Processes", 
 		 "room": "MA4"},
-	"W3-E": {"papers": ["168", "30", "170", "77"], 
+	"W3-E": {"papers": ["168", "170", "30", "77"], 
 		 "name": "Web-related Modelica Tools", 
 		 "room": "MA5"},
 	"W3-X": {"papers": [],
 		 "name": "Exhibition Session",
-		 "room": "Exh"},
+		 "room": "Common Area"},
 	"Cl-X": {"papers": [],
 		 "name": "Library Awards and Closing",
-		 "room": "TBD"}
+		 "room": "Aulan, Kårhuset"}
     },
     "program": [
 	{
@@ -220,6 +230,6 @@
 	    "slots": ["Op", "T1", "T2", "T3", "Ve", "Co"]
 	}, {
 	    "day": "Wednesday",
-	    "slots": ["W1", "W2", "W3", "Cl"]
+	    "slots": ["WO", "W1", "W2", "Po", "W3", "Cl"]
 	}]
 }
