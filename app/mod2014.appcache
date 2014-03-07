@@ -24,3 +24,7 @@ views/main.html
 views/session.html
 bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff
 images/LogoAndName.png
+
+NETWORK:
+http://www.google-analytics.com/analytics.js
+
