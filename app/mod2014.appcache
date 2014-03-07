@@ -1,7 +1,11 @@
 CACHE MANIFEST
+
+# Random change
+
 index.html
 bower_components/bootstrap/dist/css/bootstrap.css
 styles/main.css
+styles/add2home.css
 bower_components/jquery/jquery.js
 bower_components/angular/angular.js
 bower_components/bootstrap/dist/js/bootstrap.js
@@ -10,12 +14,13 @@ bower_components/angular-resource/angular-resource.js
 bower_components/angular-cookies/angular-cookies.js
 bower_components/angular-sanitize/angular-sanitize.js
 scripts/app.js
+scripts/add2home.js
 scripts/controllers/main.js
 scripts/services/Schedule.js
 scripts/controllers/Session.js
 scripts/services/UserData.js
 scripts/services/topicFilter.js
 views/main.html
+views/session.html
 bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff
 images/LogoAndName.png
-mod2014.appcache
