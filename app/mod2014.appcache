@@ -3,6 +3,7 @@ CACHE MANIFEST
 # Random change
 
 index.html
+apple-touch-icon.png
 bower_components/bootstrap/dist/css/bootstrap.css
 styles/main.css
 styles/add2home.css
@@ -27,4 +28,3 @@ images/LogoAndName.png
 
 NETWORK:
 http://www.google-analytics.com/analytics.js
-
